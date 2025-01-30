@@ -1,0 +1,30 @@
+.container {
+  text-align: center;
+}
+h2 {
+  color: green;
+  font-family: sans-serif;
+}
+h3 {
+  color: #288f15;
+  font-family: sans-serif;
+}
+button {
+  background: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: sans-serif;
+  border: none;
+}
+#decrease {
+  background-color: red;
+  color: white;
+}
+#reset {
+  background-color: black;
+  color: white;
+}
+#increase {
+  background-color: #24d65d;
+  color: white;
+}

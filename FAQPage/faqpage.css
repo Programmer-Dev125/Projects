@@ -1,0 +1,52 @@
+body {
+  background-color: whitesmoke;
+}
+.card {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.grid {
+  background-color: white;
+  box-shadow: 5px 10px #f0efed;
+  padding: 10px 20px 10px 20px;
+  margin: 20px 0px;
+}
+
+.myrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  color: #333333;
+  font-family: sans-serif;
+}
+
+.card .content {
+  display: none;
+  transition: border-top 2s ease-out;
+}
+
+.card.toShow .content {
+  display: block;
+  border-top: 2px solid lightgrey;
+}
+
+.card .icon::before,
+.card.toShow .icon::before {
+  font-size: 25px;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.card .icon::before {
+  content: "+";
+}
+
+.card.toShow .icon::before {
+  content: "-";
+}

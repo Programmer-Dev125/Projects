@@ -1,0 +1,35 @@
+body {
+  margin: 0px !important;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  margin: 0px auto;
+}
+img {
+  width: 33%;
+}
+button {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.center {
+  text-align: center;
+  position: fixed;
+}
+#next-btn {
+  background-color: #24a0ed;
+  color: white;
+  margin: 0px 10px 0px 0px;
+}
+#prev-btn {
+  background-color: #f44336;
+  color: white;
+}

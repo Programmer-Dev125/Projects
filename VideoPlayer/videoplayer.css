@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+}
+video {
+  width: 60%;
+  margin: 50px 0px 20px 0px;
+}
+
+button {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+#play-btn {
+  background-color: #24a0ed;
+  color: white;
+}
+
+#pause-btn {
+  background-color: #32cd32;
+  color: white;
+}
+
+#reset-btn {
+  background-color: #f44336;
+  color: white;
+}
