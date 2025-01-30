@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../images/javascript-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../main/main.css" />
+    <link rel="stylesheet" href="./admindashboard.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="sidebar">
+        <div class="logo-container">
+          <img src="./images/logo-img.png" alt="img" />
+        </div>
+        <ul class="list">
+          <li>
+            <i class="fa-solid fa-xl fa-house isActive" title="home"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-xl fa-user-tie" title="client"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-xl fa-users" title="contact"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-xl fa-tasks" title="task"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="tab-content isActive" data-content="home">
+          <div class="row content-space-between">
+            <div class="card p-20 mr-20">
+              <h2>Website Statistics</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laborum nostrum eaque eos fuga saepe explicabo nam mollitia eius
+                ab omnis!
+              </p>
+            </div>
+            <div class="card p-20">
+              <h2>No New Title To Add</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                libero, dolor repellendus pariatur nam labore ipsum dicta quasi
+                porro nulla.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" data-content="client">
+          <form autocomplete="off" class="signup-form mt-50">
+            <div class="mt-30">
+              <h2>Form</h2>
+            </div>
+            <div>
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div>
+              <input type="text" id="email" placeholder="Email" required />
+            </div>
+            <div>
+              <button id="neutral-btn">Sign up</button>
+            </div>
+          </form>
+        </div>
+        <div class="tab-content" data-content="contact">
+          <table class="data-table">
+            <!-- <caption class="hasLength isActive">
+              There is no data to display
+            </caption> -->
+            <thead>
+              <tr>
+                <th id="isId">Id</th>
+                <th id="isUser">Username</th>
+                <th id="isEmail">Email</th>
+              </tr>
+              <tr>
+                <tbody></tbody>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tab-content mt-5" data-content="task"></div>
+      </div>
+    </div>
+    <script type="module" src="./admindashboard.js"></script>
+  </body>
+</html>

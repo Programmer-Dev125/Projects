@@ -1,0 +1,120 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  width: 5%;
+  background-color: white;
+  height: 100vh;
+  text-align: center;
+}
+.content {
+  width: 80%;
+  margin: 64px auto;
+}
+ul {
+  padding: 0px 25px;
+}
+.logo-container {
+  margin: 50px 0px 100px 0px;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+  margin: 80px 0px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+i.isActive {
+  color: #24a0ed;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.isActive {
+  display: block;
+}
+
+.data-table {
+  width: 100%;
+  background-color: white;
+}
+.data-table thead {
+  text-align: left;
+  background-color: #dcdcdc;
+  padding: 10px;
+  margin: 0px;
+}
+
+.data-table td,
+th {
+  padding: 10px;
+}
+
+form {
+  width: 100%;
+  margin: 0px auto;
+}
+
+form input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  margin: 0px 10px 0px 0px;
+}
+
+input[type="text"]::placeholder {
+  font-family: sans-serif;
+  font-style: italic;
+  color: #dcdcdc;
+}
+
+.addtask-btn {
+  width: 17%;
+}
+
+.signup-form {
+  background-color: white;
+  border: none;
+  box-shadow: 5px 7px 8px lightgray;
+  padding: 20px;
+  width: 50%;
+  margin: 0px auto;
+}
+
+.signup-form #neutral-btn {
+  margin-bottom: 20px;
+}
+.hasLength {
+  display: none;
+}
+.hasLength.isActive {
+  display: block;
+  position: sticky;
+  left: 33%;
+  margin: 20px 0px;
+  font-size: 16px;
+  color: #f44336;
+  font-weight: bold;
+}
+
+#username,
+#email {
+  width: 97%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+  margin: 0px 0px 25px 0px;
+}
+#username:focus,
+#email:focus {
+  border: 1px solid #32cd32;
+}
